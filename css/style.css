@@ -1,0 +1,53 @@
+:root {
+    --color-dark: #454545;
+    --color-light: #fefefe;
+    --color-medium-dark: #616161;
+    --border-color: #ccc;
+    --button-border-color: #e5e5e5;
+    --box-shadow-color: #c7c7c7;
+    --background-color: #f3f3f3;
+    --color-active: #005a9e;
+}
+
+.layout {
+    background-color: var(--background-color);
+    padding: 3px;
+    display: inline-block;
+    border: 1px solid var(--border-color);
+    margin: 10px;
+}
+
+.buttons-content {
+    display: grid;
+    width: 500px;
+    height: 500px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 2px;
+    grid-row-gap: 2px;
+}
+
+.buttons-content button {
+    font-size: 24px;
+    background-color: var(--color-light);
+    border-color: var(--button-border-color);
+}
+
+button.active {
+    background-color: var(--color-active);
+    color: white;
+}
+
+.input-content {
+    text-align: right;
+    padding: 10px;
+}
+.input-content .calculation-result {
+    color: var(--color-medium-dark);
+    height: 24px;
+}
+
+.input-content .user-input {
+    font-size: 32px;
+    height: 48px;
+}
